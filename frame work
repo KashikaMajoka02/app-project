@@ -1,0 +1,141 @@
+<html>
+ <head>
+  <title>
+   Travel Sathi - Login
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100 font-roboto">
+  <div class="min-h-screen flex items-center justify-center">
+   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+     Login to Travel Sathi
+    </h2>
+    <form>
+     <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+       Email/Phone Number
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" placeholder="Email or Phone Number" type="text"/>
+     </div>
+     <div class="mb-6">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+       Password
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" placeholder="Password" type="password"/>
+     </div>
+     <div class="flex items-center justify-between">
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" onclick="login()" type="button">
+       Login
+      </button>
+     </div>
+    </form>
+   </div>
+  </div>
+  <div class="hidden" id="main-content">
+   <div class="min-h-screen bg-gray-100 p-4">
+    <header class="bg-white shadow">
+     <div class="container mx-auto px-4 py-6">
+      <h1 class="text-3xl font-bold">
+       Welcome to Travel Sathi
+      </h1>
+     </div>
+    </header>
+    <main class="container mx-auto px-4 py-6">
+     <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">
+       Upcoming Festivals
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of Mahakumbh festival with a large crowd and holy river" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/u7x79eb0gKQ7UKn3SdcDIsNyslfhTeKbZfo80DiaXqQQCLiQB.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Mahakumbh
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Experience the grand Mahakumbh festival with millions of devotees.
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Explore
+        </button>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of Holi festival with people playing with colors in Mathura Vrindavan" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/3PKaHfRxdG2qFKcoM2Kq0s4lxeJdv08SxI0ef7JAtfp1DWEhC.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Holi in Mathura Vrindavan
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Celebrate Holi in the birthplace of Lord Krishna with vibrant colors and joy.
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Explore
+        </button>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of Diwali festival with fireworks and decorated homes" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/0yU5sijuHQrfESCpuHaYSXBY1WcljHa6ZpJAOLnFgzFRYREKA.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Diwali
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Join the festival of lights and enjoy the beautiful fireworks and decorations.
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Explore
+        </button>
+       </div>
+      </div>
+     </section>
+     <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">
+       Village Stays
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of a traditional village home available for rent" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/vXbwqBG1Ec7oO51KInihpVnnFgOYQmoufIpDg9Woa32NYREKA.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Traditional Village Home
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Stay in a traditional village home with home-cooked meals. Price: $50/night
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Book Now
+        </button>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of a cozy cottage in a village available for rent" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/J9yd93g7mdY9C14ZTe0z7rbKGnCLxMExRmkqR7Zb1P6QYREKA.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Cozy Cottage
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Enjoy a cozy stay in a village cottage with all amenities. Price: $70/night
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Book Now
+        </button>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of a farmhouse in a village available for rent" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/ESh9McE926Y1FVZtkU8ktv816WpHjrHGv6qdMKLwue7SYREKA.jpg" width="300"/>
+        <h3 class="text-xl font-bold mb-2">
+         Farmhouse Stay
+        </h3>
+        <p class="text-gray-700 mb-4">
+         Experience a farmhouse stay with fresh farm produce. Price: $80/night
+        </p>
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+         Book Now
+        </button>
+       </div>
+      </div>
+     </section>
+     <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">
+       Travel Agencies
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div class="bg-white p-4 rounded-lg shadow-lg">
+        <img alt="Image of a travel agency office with staff" class="w-full h-48 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/1g4ebvFtLgx5SaJZfKsPuL2TGOrfEv0502y910CUxKxBhFRoA.jpg" width="300"/>
+        <h3 class="text-xl font-bol…
